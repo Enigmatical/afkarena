@@ -52,6 +52,7 @@
 			?>
 			<div class="spacer"></div>
 			<?php
+                $equip = new stdClass();
 				$equip->type = $item;
 				$equip->link->type = "";
 				$equip->link->href = "";

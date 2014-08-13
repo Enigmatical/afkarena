@@ -632,8 +632,6 @@ ol.rankings li
 	{
 		color: #333 !important;
 		text-decoration: none;
-		display: block;
-		width: 100%;
 	}
 	
 	ol.rankings li.warrior

@@ -10,6 +10,9 @@
 	
 	$hero = new Hero();
 	$hero->load($hid);
+
+    $equip = new stdClass();
+    $equip->link = new stdClass();
 	
 	$powerRating = $hero->get_EquipRating('weapon');
 

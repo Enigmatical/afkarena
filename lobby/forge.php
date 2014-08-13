@@ -11,6 +11,8 @@
 	$hero = new Hero();
 	$hero->load($_SESSION["hero_id"]);
 
+    $equip = new stdClass();
+
 	include "../includes/header.php";
 ?>
 
@@ -24,6 +26,8 @@
 			<h3>Weapon</h3>
 				<?php
 					$equip->type = "weapon";
+
+                    $equip->link = new stdClass();
 					$equip->link->type = "";
 					$equip->link->href = "/lobby/forge_options.php?type=weapon";
 	
@@ -32,6 +36,8 @@
 			<h3>Armor</h3>
 				<?php
 					$equip->type = "armor";
+
+                    $equip->link = new stdClass();
 					$equip->link->type = "";
 					$equip->link->href = "/lobby/forge_options.php?type=armor";
 	
@@ -40,6 +46,8 @@
 			<h3>Trinket</h3>
 				<?php
 					$equip->type = "trinket";
+
+                    $equip->link = new stdClass();
 					$equip->link->type = "";
 					$equip->link->href = "/lobby/forge_options.php?type=trinket";
 	

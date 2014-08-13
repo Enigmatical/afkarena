@@ -61,6 +61,7 @@
 				</div>
 		</div>
 		<?php
+            $equip = new stdClass();
 			$equip->type = $item;
 		
 			include "../includes/equip.php";
